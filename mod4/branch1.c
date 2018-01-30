@@ -44,6 +44,15 @@ int main()
         temp = 21 - age; 
         printf("You have %d years until you can buy alcohol\n", temp);
     }
+    if(age >= 65)
+    {
+        printf("you can retire\n");
+    }
+    else
+    {
+        temp = 65 - age; 
+        printf("You have %d years until you can retire\n", temp);
+    }
     if(age == 35) 
     {
         printf("You are at the special age %d\n", age);
