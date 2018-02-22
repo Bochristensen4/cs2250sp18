@@ -31,6 +31,8 @@ void ShowPoint(int x, int y); // pass by value
 // pass xa and ya by reference
 void MovePoint(int newx, int newy, int* xa, int* ya); // pass by reference
 
+// 4) update point
+void UpdatePoint(int* xa, int* ya);
 // Main Function
 int main()
 {
@@ -41,6 +43,8 @@ int main()
     InitPoint(&x,&y);
     ShowPoint(x,y);
     MovePoint(3, 5, &x, &y);
+    ShowPoint(x,y);
+    UpdatePoint(&x,&y);
     ShowPoint(x,y);
 
     return 0;
@@ -74,4 +78,13 @@ void MovePoint(int newx, int newy, int* xa, int* ya)
     *ya = newy;
     return;
 }
-// 3) Move/Update your Point position
+void UpdatePoint(int* xa, int* ya)
+{
+    printf ("Enter your x-coordinate: \n");
+
+
+    scanf("%d", xa); 
+    printf("Enter your y-coordinate: \n");
+    scanf("%d", ya);
+    return;
+}
