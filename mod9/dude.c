@@ -16,14 +16,6 @@
  * =====================================================================================
  */
 #include <stdio.h>
-
-// Constants
-
-// Function Prototypes
-
-// Main Function
-
-
 // Function Definitions
 /* 
  * ===  FUNCTION  ======================================================================
@@ -47,7 +39,7 @@ return;
  */
 
 
-void ShowInfoStruct(SuperDude sd)
+void ShowInfoStruct(SuperDude* sd)
 {
     printf("Your age is [%d]\n", sd.age);
     printf("Your weight is [%lf]\n", sd.weight);
@@ -56,4 +48,16 @@ void ShowInfoStruct(SuperDude sd)
 
 return;
 }
+void InitInfoStruct(SuperDude* sd)
+{
+    // when using address of a structure, use the -> operator
+    // to access the struct members instead of the . operator
+    //which is used when you have the structure instead of the
+    //address
+    sd->age = -99;
+    sd->weight = -99.0;
+    (*sd).sex = 'N'; // alternate way of updating the values
+    //sd->sex = "M"; same as above
 
+    return,
+}

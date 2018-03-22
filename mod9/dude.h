@@ -17,7 +17,6 @@
  */
 #ifndef  DUDE__INC__
 #define  DUDE_INC__
-    <+DETAILED+>
 struct Dude
 {
     int age;
@@ -33,7 +32,9 @@ typedef struct SuperDude
 
 // Function Prototypes
 void ShowInfo(int age, double weight);
-void ShowInfoStruct(SuperDude sd);
+// Pass a const address instead of the vaule
+void ShowInfoStruct(const SuperDude* sd);
+void InitInfoStruct(SuperDude* sd); // address of SuperDude Type
 
 #endif /* ----- #ifndef DUDE__INC__ ----- */
 
