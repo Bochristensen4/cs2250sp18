@@ -6,7 +6,7 @@
  *    Description:  
  *
  *        Version:  1.0
- *        Created:  03/24/2018 08:21:00 PM
+ *        Created:  03/15/2018 08:51:32 AM
  *       Revision:  none
  *       Compiler:  gcc
  *
@@ -17,6 +17,7 @@
  */
 #include <stdio.h>
 #include "xycoord.h"
+
 // Function Definitions
 // 1) Initialize your Point to (0, 0)
 void InitPoint(int* xa, int* ya)
@@ -60,5 +61,4 @@ void UpdatePoint(int* xa, int* ya)
     scanf("%d",ya);
     return;
 }
-
 
