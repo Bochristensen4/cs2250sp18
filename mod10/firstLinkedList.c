@@ -58,9 +58,9 @@ int main(void)
     }
 // Clean your mess
     free(headObj);
-    free(headObj1);
-    free(headObj2);
-    free(headObj3);
+    free(nodeObj1);
+    free(nodeObj2);
+    free(nodeObj3);
 
     return 0;
                                                                                                                                            }

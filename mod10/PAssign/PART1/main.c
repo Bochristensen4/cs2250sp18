@@ -75,7 +75,7 @@ int main()
     contactName[strlen(contactName)-1] = '\0';// flushing spaces
     printf("Enter phone number:\n");
     fgets(contactPhoneNum, CONTACT_INFO_LEN, stdin);
-    contactPhoneNum[strlen(contactPhoneNum)-1] = '\0';// flushing spaces
+    //contactPhoneNum[strlen(contactPhoneNum)-1] = '\0';// flushing spaces
     printf("You entered: %s, %s\n\n", contactName, contactPhoneNum);
 
     nodeObj2 = (ContactNode*)malloc(sizeof(ContactNode));
@@ -83,11 +83,13 @@ int main()
     InsertContactAfter(nodeObj1, nodeObj2);
 
     // print linked list
+    printf("CONTACT LIST\n");
     currObj = headObj;
     while(currObj != NULL)
     {
         PrintContactNode(currObj);
         currObj = GetNextContact(currObj);
+        printf("\n");
     }
 
     //deep cleaning

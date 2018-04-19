@@ -23,8 +23,8 @@ typedef struct ContactNode_struct
 {
     char contactName[50];
     char contactPhoneNum[50];
-    struct ContactNode* nextNodePtr;
-}ContactNode;
+    struct ContactNode_struct* nextNodePtr;
+} ContactNode;
 
 // Program Functions
 void CreateContactNode(ContactNode* thisNode, char contactName[], char contactPhoneNum[], ContactNode* nextLoc);

@@ -15,7 +15,7 @@
  *
  * =====================================================================================
  */
-#ifndef  INTLINK__INC__
+#ifndef  INTLINK_INC__
 #define  INTLINK_INC__
 
 // constantns
